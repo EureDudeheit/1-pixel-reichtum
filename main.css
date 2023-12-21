@@ -6,6 +6,7 @@ html,
 .wealth-wrapper-outer
 .wealth-row {
   min-height: 100%;
+  
 }
 .title-screen {
   width: 100vw;
@@ -65,7 +66,8 @@ h1 {
 .wealth-wrapper-outer {
   font-family: sans-serif;
   overflow: visible;
-  display: inline-block;
+  /* display: inline-block; */
+  display: inline-flex;
 }
 .center-sticky {
   position: sticky;
@@ -127,17 +129,26 @@ h1 {
 }
 .wealth-wrapper {
   margin: 1em 3em;
+  
 }
-.wealth {
+.income {
   background-color: black;
   align-items: center;
   display: flex;
 }
+
+
+.wealth {
+  background-color: rgb(0, 178, 169);
+  align-items: center;
+  display: flex;
+}
+
 .title {
   margin-bottom: 5px;
 }
 .billion .wealth > .wealth-title {
-  flex-basis: 110px;
+  /*flex-basis: content; */
   position: static;
 }
 .four-hundred .wealth > .wealth-title {
@@ -150,7 +161,7 @@ h1 {
   width: 10000px;
 }
 .wealth > .wealth-title {
-  flex-basis: 1%;
+  flex-basis: 10%;
   padding: 10px;
 }
 @media (max-width: 450px) {
@@ -270,18 +281,32 @@ h1 {
 .one-thousand {
   width: 1px;
   height: 1px;
-  margin-top: 5px;
+  margin-top: 50px;
 }
-.median {
+.median-income {
   width: 320px;
+  
 }
-.median .wealth {
-  width: 7.94px;
-  height: 7.94px;
+.median-income .income {
+  width:  6.3px;
+  height: 6.3px;
 }
+
+.median-wealth-germany {
+  width: 320px;
+  
+}
+
+.median-wealth-germany .wealth {
+  width:  11.26px;
+  height: 11.26px;
+}
+
+/* Todo bei .explainer: Schriftart, Ausrichtung, Umbrüche */
 .explainer {
   font-size: 16px;
   font-weight: normal;
+  
 }
 .million {
   width: 150px;
@@ -290,6 +315,8 @@ h1 {
   width: 31.62px;
   height: 31.62px;
   background-color: #4CAF50;
+  margin-top: 40px;
+  
 }
 .billion .wealth {
   width: 2000px;
