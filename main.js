@@ -12,10 +12,10 @@ var sixtyPercentScrollPercentage = 0.0;
 var babies = document.getElementById('babies-wrapper');
 var baby_counter = document.getElementById('baby-counter');
 
-var thousand = new Intl.NumberFormat('en-US')
-var money = new Intl.NumberFormat('en-US', {
+var thousand = new Intl.NumberFormat('de-DE')
+var money = new Intl.NumberFormat('de-DE', {
   style: 'currency',
-  currency: 'USD',
+  currency: 'EUR',
   minimumFractionDigits: 0,
   maximumFractionDigits: 0,
 });
@@ -97,7 +97,10 @@ function update_wealth_counter() {
     return window.scrollX < bezos.offsetLeft + bezos.offsetWidth + 100;
   }
   function bezos_counter_viewable() {
+    //Anpassen, ab wann der Zähler sichtbar wird
     return bezosCounterStart.offsetLeft - window.scrollX < (window.innerWidth);
+  
+
   }
   function four_hundred_viewable() {
     return window.scrollX < four_hundred.offsetLeft + four_hundred.offsetWidth + 100;

@@ -341,7 +341,7 @@ h1 {
 }
 .ruler {
   background-image: url('img/ruler.svg');
-  background-repeat: repeat-x;
+  background-repeat: repeat-x; 
   background-position: 0 470px;
 }
 .key {
