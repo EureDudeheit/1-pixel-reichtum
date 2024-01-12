@@ -329,7 +329,7 @@ h1 {
   }
 }
 .bezos .wealth {
-  width: 370000px;
+  width: 370000px; 
   height: 500px;
   background-color: orange;
 }
@@ -343,14 +343,15 @@ h1 {
   background-image: url('img/ruler.svg');
   background-repeat: repeat-x; 
   background-position: 0 470px;
+
 }
 .key {
   position: absolute;
   top: 450px;
-  width: 170px;
+  width: 210px;
   background-image: url(img/scale.1.0.svg);
   background-repeat: no-repeat;
-  background-position: 0px 4px;
+  background-position: 0px 10px;
   display: flex;
   justify-content: center;
 }
