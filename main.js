@@ -1,6 +1,6 @@
-var bezos = document.getElementById('bezos');
-var bezos_counter = document.getElementById('bezos-counter');
-var bezosCounterStart = document.getElementById('bezos-counter-start');
+var richest = document.getElementById('richest');
+var richest_counter = document.getElementById('richest-counter');
+var richestCounterStart = document.getElementById('richest-counter-start');
 
 var four_hundred = document.getElementById('four-hundred');
 var four_hundred_counter = document.getElementById('four-hundred-counter');
@@ -75,13 +75,13 @@ babies.addEventListener('scroll', function(){
 })
 
 function update_wealth_counter() {
-  if (bezos_viewable()) {
-    if (bezos_counter_viewable()) {
-      let wealth = (window.scrollX - bezos.offsetLeft + 175) * 500000;
-      bezos_counter.innerHTML = (wealth < 185000000000) ? money.format(wealth) : "$185,000,000,000";
+  if (richest_viewable()) {
+    if (richest_counter_viewable()) {
+      let wealth = (window.scrollX - richest.offsetLeft + 175) * 500000;
+      richest_counter.innerHTML = (wealth < 185000000000) ? money.format(wealth) : "185.000.000.000 €";
     }
     else {
-      bezos_counter.innerHTML = '';
+      richest_counter.innerHTML = '';
     }
   }
   else if (four_hundred_viewable()) {
@@ -93,12 +93,13 @@ function update_wealth_counter() {
       four_hundred_counter.innerHTML = '';
     }
   }
-  function bezos_viewable() {
-    return window.scrollX < bezos.offsetLeft + bezos.offsetWidth + 100;
+  function richest_viewable() {
+    return window.scrollX < richest.offsetLeft + richest.offsetWidth + 100;
   }
-  function bezos_counter_viewable() {
+  function richest_counter_viewable() {
     //Anpassen, ab wann der Zähler sichtbar wird
-    return bezosCounterStart.offsetLeft - window.scrollX < (window.innerWidth);
+    //return richestCounterStart.offsetLeft - window.scrollX < (window.innerWidth);
+    return richestCounterStart
   
 
   }

@@ -328,7 +328,7 @@ h1 {
     border-bottom: 3px dotted #007fb7;
   }
 }
-.bezos .wealth {
+.richest .wealth {
   width: 370000px; 
   height: 500px;
   background-color: orange;
@@ -358,7 +358,7 @@ h1 {
 .key > span {
   display: inline-block;
 }
-.bezos .key > span {
+.richest .key > span {
   background-color: orange;
 }
 .four-hundred .key > span {
